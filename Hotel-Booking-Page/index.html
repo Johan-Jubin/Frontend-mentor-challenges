@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Hotel booking confirmation page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar starts -->
+  <header>
+    <div class="comp-name">
+     <img src="assets/images/logo.svg" alt="logo">
+     <img class="menu-btn" src="assets/images/icon-menu.svg" alt="menu">
+    </div>
+    <!-- Guest navigation -->
+    <div class="menu">
+      <ul class="menu-container">
+        <li class="item-notif"><a href="#"><img src="assets/images/icon-bed.svg" alt=""><h1 class="li">Your stay</h1><span>1</span></a></li>
+        <li><a href="#"><img src="assets/images/icon-house.svg" alt=""><h1 class="li">The house</h1></a></li>
+        <li><a href="#"><img src="assets/images/icon-pin.svg" alt=""><h1 class="li">Around town</h1></a></li>
+        <li><a href="#"><img src="assets/images/icon-breakfast-outline.svg" alt=""><h1 class="li">Breakfast</h1></a></li>
+        <li><a href="#"><img src="assets/images/icon-mail.svg" alt=""><h1 class="li">Messages</h1></a></li>
+      </ul>
+      <!-- Local weather -->
+      <div class="weather">
+        <h3 class="place">Today in Cassis</h3>
+        <h1>27°</h1>
+        <h3 class="climate">Sunny · light breeze</h3>
+      </div>
+      <aside>
+        <h3>Est. 1987</h3>
+        <h3>Maison Soleil · 12 Rue des Oliviers · Cassis</h3>
+        <h3>© 2026 Maison Soleil</h3>
+      </aside>
+    </div>
+  </header>
+  <!-- Sidebar ends -->
+
+  <!-- Main content starts -->
+  <main>
+    <section class="greet-cont">
+      <div class="greet-msg">
+        <h3>Booking · Confirmed</h3>
+        <h1>Bienvenue, <span class="color-name">Lucia.</span></h1>
+      </div>
+      <div class="greet-btns">
+        <button class="print-receipt">Print receipt</button>
+        <button class="calendar-add">Add to calendar</button>
+      </div>
+    </section>
+    <!-- Booking cards start -->
+    <section class="body-cards">
+      <!-- Receipt card -->
+      <div class="receipt-card">
+        <div class="receipt-header">
+          <div class="receipt-details">
+            <h2>Receipt</h2>
+            <p>№ MS-2026 <br>0421-AH</p>
+          </div>
+          <h1>Your stay</h1> 
+        </div>
+        <div class="receipt-dates">
+          <div class="checkin">
+            <h3>Check in</h3>
+            <h1>25 Apr</h1>
+            <h2>Saturday · 15:00</h2>
+          </div>
+          <div class="checkout">
+            <h3>Check out</h3>
+            <h1>29 Apr</h1>
+            <h2>Wednesday · 11:00</h2>
+          </div>
+        </div>
+        <div class="receipt-pricing">
+          <ul>
+            <li class="price-items"><h1>Room · La Garrigue · 4 nights</h1><span class="price">€ 620.00</span></li>
+            <li class="price-items"><h1>Breakfast · 2 guests</h1><span class="price">€ 96.00</span></li>
+            <li class="price-items"><h1>Tourist tax</h1><span class="price">€ 14.40</span></li>
+          </ul>
+        </div>
+        <div class="total-barcode">
+          <ul>
+            <li class="barcode-items"><h1>Total paid</h1><span class="price">€ 730.40</span></li>
+            <li class="barcode-items"><h1>Paid · Wise · GBP</h1><img src="assets/images/icon-barcode.svg" alt="barcode"></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Note from host card -->
+      <div class="host-card">
+        <div class="host-header">
+          <h3>Welcome card</h3>
+          <img src="assets/images/icon-sun.svg" alt=""><!--sun-img-->
+        </div>
+        <div class="host-body">
+          <h2>A note from your host,</h2>
+          <h1>Margaux.</h1>
+          <p>We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.</p>
+        </div>
+        <div class="host-footer">
+          <h3>Room</h3>
+          <h2>La Garrigue</h2>
+        </div>
+      </div>
+    </section>
+    <!-- Booking cards end -->
+
+    <!-- Guest info row starts -->
+    <section class="info-cards">
+      <!-- Arrival -->
+      <div class="arrival">
+        <div class="arrival-header">
+          <img src="assets/images/icon-key.svg" alt="keys">
+          <h2>Arrival</h2>
+          <h1>01</h1>
+        </div>
+        <h1>Check-in from 15:00</h1>
+        <h3>Sat, 25 April</h3>
+        <p>Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.</p>
+      </div>
+      <!-- Wifi -->
+      <div class="wifi">
+        <div class="wifi-header">
+          <img src="assets/images/icon-wifi.svg" alt="wifi">
+          <h2>Wifi</h2>
+          <h1>02</h1>
+        </div>
+        <h1>Le Soleil · Guest</h1>
+        <h3>Password below</h3>
+        <div class="network">
+          <h2>Network</h2>
+          <h2>Le Soleil · Guest</h2>
+        </div>
+        <div class="pwd">
+          <h2 class="password-title">Password</h2>
+          <div class="copy-cont">
+            <h2>soleil-2026</h2>
+            <button>Copy</button>
+          </div>
+        </div>
+      </div>
+      <!-- Breakfast -->
+      <div class="breakfast">
+        <div class="breakfast-header">
+          <img src="assets/images/icon-breakfast.svg" alt="">
+          <h2>Breakfast</h2>
+          <h1>03</h1>
+        </div>
+        <h1>Served 8 - 10:30</h1>
+        <h3>On the terrace</h3>
+        <p>Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.</p>
+      </div>
+    </section>
+
+    <!-- Guest info row ends -->
+
+    <!-- Main content ends -->
+    <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+  </main>
+
+  
+  <script>
+    // menu-toggle-button
+    const btn = document.querySelector('.menu-btn');
+    const menu = document.querySelector('.menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('is-active');
+    });
+
+    // copy-button
+    document.querySelector('.copy-cont button').addEventListener('click', function() {
+    const textToCopy = this.previousElementSibling.innerText;    
+    navigator.clipboard.writeText(textToCopy).then(() => { 
+    const originalText = this.innerText;
+    this.innerText = 'Copied!';
+    this.classList.add('copied');
+    setTimeout(() => {
+      this.innerText = originalText;
+      this.classList.remove('copied');
+    }, 2000);
+  }).catch(err => {
+    console.error('Failed to copy text: ', err);
+  });
+});
+  </script>
+</body>
+</html>
